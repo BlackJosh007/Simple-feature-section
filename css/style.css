@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    background-image: url('../img/background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #121826;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+header h1,
+header p {
+    text-align: center;
+    /* font-size: 2.5rem; */
+}
+
+header p {
+    font-size: 1em;
+    color: #a0a3b1;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+
+.flex-container {
+    width: 100%;
+    min-width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1.5rem;
+
+}
+
+.flex-container .first-flex .emoji,
+.flex-container .second-flex .emoji,
+.flex-container .third-flex .emoji {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    /* background-color: #1e2738; */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.flex-container .first-flex .emoji.one {
+    background-color: #fceed8;
+}
+
+.flex-container .first-flex .emoji.two {
+    background-color: #e5e7eb;
+}
+
+.flex-container .first-flex .emoji.three {
+    background-color: #fbe5e6;
+}
+
+.flex-container .first-flex,
+.flex-container .second-flex,
+.flex-container .third-flex {
+    background-color: #212936;
+    min-width: 12rem;
+    max-width: 17rem;
+    height: auto;
+    /* first-correction */
+    min-height: 20rem;
+    max-height: fit-content;
+    /* second-correction */
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* box-shadow: 0px 4px 4px -1px rgba(17, 23, 41, 0.05); */
+}
+
+.flex-container .first-flex img,
+.flex-container .second-flex img,
+.flex-container .third-flex img {
+    margin-top: 1rem;
+    border-radius: 10px;
+    min-width: 10rem;
+    min-height: 8rem;
+    max-width: auto;
+    max-height: 10rem;
+}
+
+.flex-container .first-flex h2,
+.flex-container .second-flex h2,
+.flex-container .third-flex h2 {
+    font-size: 0.9rem;
+    padding: 0.2rem;
+}
+
+.flex-container .first-flex p,
+.flex-container .second-flex p,
+.flex-container .third-flex p {
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+@media (max-width: 760px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 1rem;
+    }
+
+    .flex-container .first-flex,
+    .flex-container .second-flex,
+    .flex-container .third-flex {
+        width: 90%;
+        max-width: 20rem;
+        margin-bottom: 1.5rem;
+
+    }
+}
